@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+
+    <title>Basic Pong HTML Game</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <input type="text" id="player1" placeholder="player 1" />
+        <input type="text" id="player2" placeholder="player 2" />
+
+        <button class="start-btn">Start</button>
+
+    </div>
+
+    <div class="result" style="display: none;">
+        <div>Game Over</div>
+        <div id="winner"></div>
+
+        <button class="restart-btn">Restart</button>
+
+    </div>
+
+    <div style="display:flex; flex-direction: column; text-align: center;">
+        <div style="margin-bottom: 10px;" id="u1"></div>
+        <div id="p1"></div>
+    </div>
+
+    <canvas width="750" height="585" id="game"></canvas>
+    <div style="display:flex; flex-direction: column; text-align: center">
+        <div style="margin-bottom: 10px;" id="u2"></div>
+        <div id="p2"></div>
+    </div>
+
+</body>
+
+</html>
+<script src="./App.js"></script>
