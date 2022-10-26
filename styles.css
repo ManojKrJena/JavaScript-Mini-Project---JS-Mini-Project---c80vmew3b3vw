@@ -51,6 +51,7 @@ input[type=text] {
   .start-btn {
     position: absolute;
     top: 50%;
+    left:50%;
   
     transform: translate(-50%, -50%);
     width: 220px;
@@ -142,10 +143,10 @@ input[type=text] {
   }
   
   .restart-btn {
-    position: absolute;
+    /* position: absolute;
     top: 50%;
   
-  
+   */
     width: 220px;
     height: 50px;
     border: none;
