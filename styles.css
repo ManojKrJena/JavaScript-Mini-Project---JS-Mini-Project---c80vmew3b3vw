@@ -7,52 +7,52 @@ input[type=text] {
     padding: 8px;
     box-sizing: border-box;
     transition: .3s;
-  }
-  
-  input[type=text]:focus {
+}
+
+input[type=text]:focus {
     border-color: dodgerBlue;
     box-shadow: 0 0 8px 0 rgb(69, 94, 120);
-  }
-  
-  html,
-  body {
+}
+
+html,
+body {
     height: 100%;
     margin: 0;
-  }
-  
-  body {
+}
+
+body {
     background: rgb(194, 160, 160);
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-  }
-  
-  .header {
+}
+
+.header {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     /* width: 220px;
     height: 50px; */
-  }
-  
-  #player1,
-  #player2 {
+}
+
+#player1,
+#player2 {
     position: relative;
-  
+
     height: 50px;
     font: italic small-caps bold 16px/2 cursive;
     background: rgb(194, 160, 160);
-  
-  
-  }
-  
-  .start-btn {
+
+
+}
+
+.start-btn {
     position: absolute;
     top: 50%;
-    left:50%;
-  
+    left: 50%;
+
     transform: translate(-50%, -50%);
     width: 220px;
     height: 50px;
@@ -65,10 +65,10 @@ input[type=text] {
     border-radius: 10px;
     font: italic small-caps bold 16px/2 cursive;
     text-align: center;
-  }
-  
-  .start-btn:before {
-  
+}
+
+.start-btn:before {
+
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
@@ -83,22 +83,22 @@ input[type=text] {
     opacity: 0;
     transition: opacity .3s ease-in-out;
     border-radius: 10px;
-  }
-  
-  .start-btn:active {
+}
+
+.start-btn:active {
     color: #000
-  }
-  
-  .start-btn:active:after {
+}
+
+.start-btn:active:after {
     background: transparent;
-  }
-  
-  .start-btn:hover:before {
+}
+
+.start-btn:hover:before {
     opacity: 1;
-  }
-  
-  .start-btn:after {
-  
+}
+
+.start-btn:after {
+
     z-index: -1;
     content: '';
     position: absolute;
@@ -108,23 +108,23 @@ input[type=text] {
     left: 0;
     top: 0;
     border-radius: 10px;
-  }
-  
-  @keyframes glowing {
+}
+
+@keyframes glowing {
     0% {
-      background-position: 0 0;
+        background-position: 0 0;
     }
-  
+
     50% {
-      background-position: 400% 0;
+        background-position: 400% 0;
     }
-  
+
     100% {
-      background-position: 0 0;
+        background-position: 0 0;
     }
-  }
-  
-  .result {
+}
+
+.result {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -140,22 +140,19 @@ input[type=text] {
     text-align: center;
     display: flex;
     flex-direction: column;
-  }
-  
-  .restart-btn {
-    /* position: absolute;
-    top: 50%;
-  
-   */
+}
+
+.restart-btn {
     width: 220px;
     height: 50px;
     border: none;
     outline: none;
-    color: rgb(171, 147, 147);
-    background: #111;
+    color: white;
+    background: #7C28D9;
     cursor: pointer;
     z-index: 0;
-    border-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     font: italic small-caps bold 16px/2 cursive;
     text-align: center;
-  }
+}
