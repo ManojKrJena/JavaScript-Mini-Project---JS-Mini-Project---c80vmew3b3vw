@@ -5,7 +5,8 @@ var player2 = document.querySelector("#p2");
 var user1 = document.querySelector("#player1");
 var user2 = document.querySelector("#player2");
 var winner = document.querySelector("#winner");
-
+var gamePoint=document.querySelector("#gamePoint");
+// console.log(gamePoint);
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //change your Ingame setting
 
@@ -20,7 +21,6 @@ var ballSpeed = 5;
 var p1count = 0,
   p2count = 0,
   currentPoint = 0,
-  gamePoint = 5,
   reqId = undefined;
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -220,7 +220,10 @@ btn.addEventListener("click", () => {
   u2.innerText = user2.value;
   player1.innerText = p1count;
   player2.innerText = p2count;
+  gamePoint=gamePoint.value;
+  console.log(gamePoint);
   reqId = requestAnimationFrame(loop);
+
 });
 reset.addEventListener("click", () => {
   currentPoint = 0;

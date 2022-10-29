@@ -1,4 +1,4 @@
-input[type=text] {
+input[type] {
     width: 100%;
     border: 2px solid #aaa;
     border-radius: 4px;
@@ -38,7 +38,7 @@ body {
 }
 
 #player1,
-#player2 {
+#player2,#gamePoint {
     position: relative;
 
     height: 50px;
@@ -49,10 +49,9 @@ body {
 }
 
 .start-btn {
-    position: absolute;
+    /* position: absolute;
     top: 50%;
-    left: 50%;
-
+    left: 50%; */
     transform: translate(-50%, -50%);
     width: 220px;
     height: 50px;
@@ -65,6 +64,7 @@ body {
     border-radius: 10px;
     font: italic small-caps bold 16px/2 cursive;
     text-align: center;
+    margin: 0 50%;
 }
 
 .start-btn:before {
