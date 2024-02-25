@@ -1,4 +1,4 @@
-const canvas = document.getElementById("game");
+fconst canvas = document.getElementById("game");
 const context = canvas.getContext("2d");
 var player1 = document.querySelector("#p1");
 var player2 = document.querySelector("#p2");
